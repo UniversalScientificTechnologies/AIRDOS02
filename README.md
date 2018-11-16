@@ -16,10 +16,11 @@ Technical parameters are following:
 * GPS logging interval    10 minutes
 * Time to GPS fix	26 s
 * Integration time    10 s
+* Size LxWxH 166 mm x 107 mm x 57 mm 
 * Weight 0.85 kg (Without batteries and GPS antenna)
 
 Device block diagram
-![AIRDOS02A block diagram](/sch_pcb/AIRDOS02A_block.png)
+![AIRDOS02A block diagram](hw/sch_pcb/AIRDOS02A_block.png)
 
 PCRD04B semiconductor detector schematics
 ![AIRDOS02A - detektor schematics ](hw/sch_pcb/PCRD04B_Detector_Schematics.png)
