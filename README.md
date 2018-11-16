@@ -5,7 +5,7 @@ Cosmic radiation dosimeter unit. It is intended for airborne measurement of cosm
 
 
 
-![AIRDOS02A back panel](/DOC/src/img/AIRDOS02A_box_back.JPG "AIRDOS back panel")
+![AIRDOS02A back panel](/doc/src/img/AIRDOS02A_box_back.JPG "AIRDOS back panel")
 
 Technical parameters are following: 
 
@@ -19,7 +19,7 @@ Technical parameters are following:
 * Weight 0.85 kg (Without batteries and GPS antenna)
 
 Device block diagram
-![AIRDOS02A block diagram](/SCH_PCB/AIRDOS02A_block.png)
+![AIRDOS02A block diagram](/sch_pcb/AIRDOS02A_block.png)
 
 PCRD04B semiconductor detector schematics
 ![AIRDOS02A - detektor schematics ](hw/sch_pcb/PCRD04B_Detector_Schematics.png)
