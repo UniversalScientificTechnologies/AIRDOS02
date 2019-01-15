@@ -25,4 +25,28 @@ Device block diagram
 PCRD04B semiconductor detector schematics
 ![AIRDOS02A - detektor schematics ](hw/sch_pcb/PCRD04B_Detector_Schematics.png)
 
+DATALOGGER01A - PCRD04B
+10cm - shield
+PB0-TRACE -purple
+GND-POWER GND - black
+VDD-POWER GND - orange
+PA0-A/D-yellow
+PA1-REF - grey
+
+DATALOGGER01A - GPS01A
+15cm
+GND SWPOWER - GND POWER - black
+VDD SWPOWER - VDD POWER - orange
+TX0 - RX0 - orange
+RX0 - TX0 - yellow
+
+GPS01A - JUMPER
+USB - OFF
+EXT.POWER - EXT
+ANT.TYPE - Active
+
+DATALOGER01A - JUMPER
+SDVDD
+
+
 The device can be [purchased from Universal Scientific Technologies s.r.o](http://www.ust.cz/shop/product_info.php?&products_id=269) online store. 
