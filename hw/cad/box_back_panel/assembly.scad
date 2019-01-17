@@ -1,4 +1,4 @@
-//CELICKO PREDNI
+//CELICKO ZADNI
 //---------------------------------------
 $fn=100;
 //PARAMETRY CELICKA OD VYROBCE
@@ -17,16 +17,12 @@ celicko_dira_souradniceY=45/2;    //souradnice od stredu celicka
 freza_prumer=2;
 
 //OTVORY FREZA
-//otvor_1 - pro LED
-otvor1_prumer=2;
-otvor1_souradniceX=-27.2; //souradnice od stredu celicka
-otvor1_souradniceY=-7.5; //souradnice od stredu celicka
+//otvor_1 - pro SMA
+otvor1_prumer=6.6;
+otvor1_vyska=5.95; //vyska srazene hrany
+otvor1_souradniceX=21.5; //souradnice od stredu celicka
+otvor1_souradniceY=14.5; //souradnice od stredu celicka
 
-//otvor_2 - pro vypinac
-otvor2_rozmerX=7.7; //rozměry čisté bez úprav pro frézování
-otvor2_rozmerY=5.9; //rozměry čisté bez úprav pro frézování
-otvor2_souradniceX=22.05; //souradnice od stredu celicka
-otvor2_souradniceY=-6.95; //souradnice od stredu celicka
 //---------------------------------------
 
 CELICKO_VYSLEDNE();
@@ -37,14 +33,14 @@ module CELICKO_VYSLEDNE(){
     
         //otvor1
         translate([otvor1_souradniceX,otvor1_souradniceY,0])  
-            cylinder(celicko_z+0.01, d=otvor1_prumer, center=true);   
-
-        //otvor2
-        translate([otvor2_souradniceX,otvor2_souradniceY,0])  
             minkowski() {
-                cube([otvor2_rozmerX, otvor2_rozmerY-freza_prumer, celicko_z], center=true);
+                difference() { 
+                    cylinder(celicko_z, d=otvor1_prumer-freza_prumer, center=true); 
+                    translate([otvor1_vyska-freza_prumer,0,0])
+                        cube([otvor1_prumer-freza_prumer,otvor1_prumer-freza_prumer,celicko_z+0.1],center=true); 
+            }  
                 cylinder(r=freza_prumer/2,h=0.01, center=true);
-                        } 
+                        }  
     
                 } 
 } 
