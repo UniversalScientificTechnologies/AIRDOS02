@@ -38,11 +38,11 @@ module CELICKO_VYSLEDNE(){
                     cylinder(celicko_z, d=otvor1_prumer-freza_prumer, center=true); 
                     translate([otvor1_vyska-freza_prumer,0,0])
                         cube([otvor1_prumer-freza_prumer,otvor1_prumer-freza_prumer,celicko_z+0.1],center=true); 
-            }  
+            	}  
                 cylinder(r=freza_prumer/2,h=0.01, center=true);
-                        }  
+            }  
     
-                } 
+    } 
 } 
 
 module CELICKO_OD_VYROBCE(){

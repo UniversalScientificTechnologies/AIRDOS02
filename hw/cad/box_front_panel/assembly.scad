@@ -44,9 +44,8 @@ module CELICKO_VYSLEDNE(){
             minkowski() {
                 cube([otvor2_rozmerX, otvor2_rozmerY-freza_prumer, celicko_z], center=true);
                 cylinder(r=freza_prumer/2,h=0.01, center=true);
-                        } 
-    
-                } 
+            } 
+    } 
 } 
 
 module CELICKO_OD_VYROBCE(){
