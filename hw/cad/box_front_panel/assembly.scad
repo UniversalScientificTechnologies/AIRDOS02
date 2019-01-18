@@ -23,10 +23,10 @@ otvor1_souradniceX=-27.2; //souradnice od stredu celicka
 otvor1_souradniceY=-7.5; //souradnice od stredu celicka
 
 //otvor_2 - pro vypinac
-otvor2_rozmerX=7.7; //rozměry čisté bez úprav pro frézování
-otvor2_rozmerY=5.9; //rozměry čisté bez úprav pro frézování
+otvor2_rozmerX=6.7; //rozměry čisté bez úprav pro frézování
+otvor2_rozmerY=5.4; //rozměry čisté bez úprav pro frézování
 otvor2_souradniceX=22.05; //souradnice od stredu celicka
-otvor2_souradniceY=-6.95; //souradnice od stredu celicka
+otvor2_souradniceY=-7.2; //souradnice od stredu celicka
 //---------------------------------------
 
 CELICKO_VYSLEDNE();
