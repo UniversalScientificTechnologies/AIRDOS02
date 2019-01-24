@@ -37,13 +37,13 @@ module CELICKO_VYSLEDNE(){
     
         //otvor1
         translate([otvor1_souradniceX,otvor1_souradniceY,0])  
-            cylinder(celicko_z+0.01, d=otvor1_prumer, center=true);   
+            cylinder(h = celicko_z+0.01, d=otvor1_prumer, center=true);   
 
         //otvor2
         translate([otvor2_souradniceX,otvor2_souradniceY,0])  
             minkowski() {
                 cube([otvor2_rozmerX, otvor2_rozmerY-freza_prumer, celicko_z], center=true);
-                cylinder(r=freza_prumer/2,h=0.01, center=true);
+                cylinder(d = freza_prumer,h = 0.01, center = true);
             } 
     } 
 } 
@@ -66,5 +66,30 @@ translate([celicko_dira_souradniceX,-celicko_dira_souradniceY,0])
 translate([-celicko_dira_souradniceX,-celicko_dira_souradniceY,0])  
     cylinder(celicko_z+0.01, d=celicko_dira_prumer, center=true);  
    */ 
+	} 
 } 
+
+
+
+module drill_helper(){
+    difference() {
+
+        cube([celicko_x+10,celicko_y+10,celicko_z+10],center=true);
+
+        translate([0,0,(celicko_z+10)/2 - celicko_z/2]) 
+        	CELICKO_OD_VYROBCE();
+    
+        //otvor1
+        translate([otvor1_souradniceX,otvor1_souradniceY,0])  
+            cylinder(h = 30, d = 1.3, center=true);
+
+        translate([otvor2_souradniceX,otvor2_souradniceY,0])  
+            minkowski() {
+                cube([otvor2_rozmerX, otvor2_rozmerY-freza_prumer, celicko_z], center=true);
+                cylinder(d = freza_prumer,h = 30, center = true);
+            }    
+    } 
 } 
+
+translate([0,100,0])
+	drill_helper();
