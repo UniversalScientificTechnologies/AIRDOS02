@@ -5,7 +5,7 @@ Cosmic radiation dosimeter unit. It is intended for airborne measurement of cosm
 
 
 
-![AIRDOS02A back panel](/doc/src/img/AIRDOS02A_box_back.JPG "AIRDOS back panel")
+![AIRDOS02A back panel](/doc/src/img/AIRDOS02A_box_front.jpg "AIRDOS front panel")
 
 **Technical parameters are following:** 
 
