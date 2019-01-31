@@ -31,7 +31,7 @@ Cosmic radiation dosimeter unit. It is intended for airborne measurement of cosm
 | :-------------: |:-------------:| :-----:|:-----:|
 | PB0     | TRACE | purple |10cm shield |
 | GND     | POWER GND | black |10cm shield |
-| VDD    | POWER GND | orange |10cm shield |
+| VDD    | POWER VDD | orange |10cm shield |
 | PA0     | A/D | yellow |10cm shield |
 | PA1    | REF | grey |10cm shield |
 
@@ -53,6 +53,7 @@ Cosmic radiation dosimeter unit. It is intended for airborne measurement of cosm
 | DATALOGER01A       |           | 
 | :-------------: |:-------------:|
 | SDVDD     |  | 
+| POWER - BATERY     |  | 
 
 
 The device can be [purchased from Universal Scientific Technologies s.r.o](http://www.ust.cz/shop/product_info.php?&products_id=269) online store. 
