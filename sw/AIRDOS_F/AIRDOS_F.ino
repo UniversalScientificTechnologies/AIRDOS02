@@ -1,6 +1,7 @@
 //#define DEBUG // Please comment it if you are not debugging
-String githash = "d2d1e0d";
-String FWversion = "F2";
+String githash = "f1bb131";
+String FWversion = "F3";
+#define ZERO 259
 
 /*
   AIRDOS with RTC (AIRDOS-F)
@@ -85,7 +86,8 @@ boolean SDClass::begin(uint32_t clock, uint8_t csPin) {
 
 uint16_t count = 0;
 uint32_t serialhash = 0;
-uint16_t offset, base_offset;
+uint16_t offset;
+uint16_t base_offset = ZERO - 1;
 uint8_t lo, hi;
 uint16_t u_sensor, maximum;
 struct RTCx::tm tm;
@@ -247,7 +249,6 @@ void setup()
   } else {
     u_sensor -= (CHANNELS / 2);
   }
-  base_offset = u_sensor;
 
   // Initiates RTC
   rtc.autoprobe();
@@ -375,7 +376,7 @@ void loop()
     dataString += String(t-946684800); 
     dataString += ",";
 
-    uint16_t noise = base_offset+3;
+    uint16_t noise = base_offset+4;
     uint32_t dose=0;
     #define RANGE 252
     
