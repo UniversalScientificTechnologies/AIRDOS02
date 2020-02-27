@@ -1,7 +1,7 @@
 //#define DEBUG // Please comment it if you are not debugging
-String githash = "f1bb131";
-String FWversion = "F3";
-#define ZERO 259
+String githash = "f157c1d";
+String FWversion = "F4";
+#define ZERO 255  // 5th channel is channel 1 (column 10 from 0)
 
 /*
   AIRDOS with RTC (AIRDOS-F)
@@ -168,7 +168,7 @@ void setup()
   Serial.println("#Hmmm...");
 
   // make a string for device identification output
-  String dataString = "$AIRDOS," + FWversion + "," + githash + ","; // FW version and Git hash
+  String dataString = "$AIRDOS," + FWversion + "," + String(ZERO) + "," + githash + ","; // FW version and Git hash
   
   Wire.beginTransmission(0x58);                   // request SN from EEPROM
   Wire.write((int)0x08); // MSB
@@ -364,41 +364,36 @@ void loop()
     rtc.readClock(tm);
     RTCx::time_t t = RTCx::mktime(&tm);
 
-    // make a string for assembling the data to log:
-    String dataString = "";
-
-    // make a string for assembling the data to log:
-    dataString += "$CANDY,";
-
-    dataString += String(count); 
-    dataString += ",";
-  
-    dataString += String(t-946684800); 
-    dataString += ",";
-
     uint16_t noise = base_offset+4;
     uint32_t dose=0;
     #define RANGE 252
-    
-    for(int n=base_offset; n<(base_offset+RANGE); n++)  
-    {
-      dataString += String(histogram[n]); 
-      //dataString += "\t";
-      dataString += ",";
-      //if (n==NOISE) dataString += "*,";
-    }
-    
+
     for(int n=noise; n<(base_offset+RANGE); n++)  
     {
       dose += histogram[n]; 
     }
 
+    // make a string for assembling the data to log:
+    String dataString = "";
+    
+    // make a string for assembling the data to log:
+    dataString += "$CANDY,";
+    dataString += String(count); 
+    dataString += ",";  
+    dataString += String(t-946684800); 
+    dataString += ",";
     dataString += String(suppress);
     dataString += ",";
     dataString += String(dose);
     dataString += ",";
     dataString += String(offset);
-
+    
+    for(int n=base_offset; n<(base_offset+RANGE); n++)  
+    {
+      dataString += ",";
+      dataString += String(histogram[n]); 
+    }
+    
     count++;
 
     {
