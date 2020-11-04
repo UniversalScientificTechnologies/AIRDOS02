@@ -1,0 +1,3 @@
+[submodule "doc/PCRD04B"]
+	path = doc/PCRD04B
+	url = https://github.com/mlab-modules/PCRD04.git
