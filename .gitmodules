@@ -1,3 +1,9 @@
 [submodule "doc/PCRD04B"]
 	path = doc/PCRD04B
 	url = https://github.com/mlab-modules/PCRD04.git
+[submodule "doc/DATALOGGER01A"]
+	path = doc/DATALOGGER01A
+	url = https://github.com/mlab-modules/DATALOGGER01.git
+[submodule "doc/GPS01B"]
+	path = doc/GPS01B
+	url = https://github.com/mlab-modules/GPS01.git
