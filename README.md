@@ -55,5 +55,4 @@ Cosmic radiation dosimeter unit. It is intended for airborne measurement of cosm
 | SDVDD     |  | 
 | POWER - BATERY     |  | 
 
-
-The device can be [purchased from Universal Scientific Technologies s.r.o](http://www.ust.cz/shop/product_info.php?&products_id=269) online store. 
+The device can be purchased by [Universal Scientific Technologies s.r.o](http://www.ust.cz). Contact us by [email](sale@ust.cz) for an offer.
