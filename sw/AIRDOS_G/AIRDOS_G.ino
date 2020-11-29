@@ -1,6 +1,7 @@
 #define DEBUG // Please comment it if you are not debugging
 String githash = "d2d1e0d";
-String FWversion = "G3";
+String FWversion = "G4";
+#define ZERO 255  // 5th channel is channel 1 (column 10 from 0, ussually DCoffset or DCoffset+1)
 
 /*
   AIRDOS02A (RTC, GPS)
@@ -89,7 +90,8 @@ boolean SDClass::begin(uint32_t clock, uint8_t csPin) {
 
 uint16_t count = 0;
 uint32_t serialhash = 0;
-uint16_t offset, base_offset;
+uint16_t offset;
+uint16_t base_offset = ZERO - 1;
 uint8_t lo, hi;
 uint16_t u_sensor, maximum;
 struct RTCx::tm tm;
@@ -252,7 +254,7 @@ void setup()
   } else {
     u_sensor -= (CHANNELS / 2);
   }
-  base_offset = 256; //u_sensor;
+  //base_offset = 256; //u_sensor;
 
   // Initiates RTC
   rtc.autoprobe();
@@ -460,7 +462,7 @@ void loop()
   }
   
   // GPS **********************
-  if (flux_long > GPSthreshold)
+//  if (flux_long > GPSthreshold)
 //  if (false)
   {
       // make a string for assembling the data to log:

@@ -1,7 +1,7 @@
 //#define DEBUG // Please comment it if you are not debugging
 String githash = "f157c1d";
 String FWversion = "F4";
-#define ZERO 255  // 5th channel is channel 1 (column 10 from 0)
+#define ZERO 256  // 5th channel is channel 1 (column 10 from 0, ussually DCoffset or DCoffset+1)
 
 /*
   AIRDOS with RTC (AIRDOS-F)
