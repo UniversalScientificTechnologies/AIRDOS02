@@ -15,6 +15,7 @@ Cosmic radiation dosimeter unit. It is intended for airborne measurement of cosm
 * Energy measurement resolution    <60 keV/channel
 * GPS logging interval    10 minutes
 * Time to GPS fix	26 s
+* Airborne GPS parameters (navigation altitude verified up to 36km amsl)
 * Integration time    10 s
 * Size LxWxH 166 mm x 107 mm x 57 mm 
 * Weight 0.85 kg (Without batteries and GPS antenna)
