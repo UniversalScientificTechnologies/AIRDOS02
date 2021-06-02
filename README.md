@@ -57,3 +57,8 @@ Cosmic radiation dosimeter unit. It is intended for airborne measurement of cosm
 | POWER - BATERY     |  | 
 
 The device can be purchased by [Universal Scientific Technologies s.r.o](http://www.ust.cz). Contact us by [email](sale@ust.cz) for an offer.
+
+## Relevant publications
+
+  * [AIRDOS — open-source PIN diode airborne dosimeter](https://iopscience.iop.org/article/10.1088/1748-0221/16/03/T03006)
+
