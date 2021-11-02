@@ -1,5 +1,4 @@
-# AIRDOS02
-Airborne cosmic radiation dosimeter.
+# AIRDOS02 - Airborne cosmic radiation dosimeter with GPS 
 
 Cosmic radiation dosimeter unit. It is intended for airborne measurement of cosmic radiation and dosimetry in mixed ionization fields on board of aircraft. 
 
