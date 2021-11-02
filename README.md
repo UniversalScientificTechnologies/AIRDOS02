@@ -2,11 +2,9 @@
 
 Cosmic radiation dosimeter unit. It is intended for airborne measurement of cosmic radiation and dosimetry in mixed ionization fields on board of aircraft. 
 
-
-
 ![AIRDOS02A back panel](/doc/src/img/AIRDOS02A_box_front.jpg "AIRDOS front panel")
 
-**Technical parameters are following:** 
+### Technical parameters
 
 * Silicon PIN diode detector with 60mm3 detection volume
 * Measurement endurance 20 days
@@ -19,13 +17,20 @@ Cosmic radiation dosimeter unit. It is intended for airborne measurement of cosm
 * Size LxWxH 166 mm x 107 mm x 57 mm 
 * Weight 0.85 kg (Without batteries and GPS antenna)
 
-**Device block diagram**
+
+The device can be purchased from [Universal Scientific Technologies s.r.o](http://www.ust.cz). Contact us by [email](sale@ust.cz) for a commercial quotation.
+
+## Hardware description 
+
+### Block schematics
+
 ![AIRDOS02A block diagram](hw/sch_pcb/AIRDOS02A_block.png)
 
-**PCRD04B semiconductor detector schematics**
+#### PCRD04B - semiconductor detector circuit 
+
 ![AIRDOS02A - detektor schematics ](hw/sch_pcb/PCRD04B_Detector_Schematics.png)
 
-**Wire connection**
+### Wired connections
 
 | DATALOGGER01A       | PCRD04B           | Color | Length |
 | :-------------: |:-------------:| :-----:|:-----:|
@@ -42,7 +47,7 @@ Cosmic radiation dosimeter unit. It is intended for airborne measurement of cosm
 | TX0     | RX0 | orange |15cm |
 | RX0     | TX0 | yellow |15cm |
 
-**Jumper connection**
+### Jumper configuration
 
 | GPS01B       |           | 
 | :-------------: |:-------------:|
@@ -54,8 +59,6 @@ Cosmic radiation dosimeter unit. It is intended for airborne measurement of cosm
 | :-------------: |:-------------:|
 | SDVDD     |  | 
 | POWER - BATERY     |  | 
-
-The device can be purchased from [Universal Scientific Technologies s.r.o](http://www.ust.cz). Contact us by [email](sale@ust.cz) for an commercial quotation.
 
 ## Relevant publications
 
