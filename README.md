@@ -7,7 +7,7 @@ Cosmic radiation dosimeter unit. It is intended for airborne measurement of cosm
 ### Technical parameters
 
 * Silicon PIN diode detector with 60mm3 detection volume
-* Measurement endurance 20 days
+* Measurement endurance 200 days
 * Number of erengy channels    248
 * Energy measurement resolution    <60 keV/channel
 * GPS logging interval    10 minutes
