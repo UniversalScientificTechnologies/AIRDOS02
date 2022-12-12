@@ -1,8 +1,13 @@
-# AIRDOS02 - Airborne cosmic radiation dosimeter with GPS 
-
-Cosmic radiation dosimeter unit. It is intended for airborne measurement of cosmic radiation and dosimetry in mixed ionization fields on board of aircraft. 
+# AIRDOS02 - Airborne cosmic radiation dosimeter with GPS
 
 ![AIRDOS02A back panel](/doc/src/img/AIRDOS02A_box_front.jpg "AIRDOS front panel")
+
+Cosmic radiation dosimeter unit. It is intended for airborne measurement of cosmic radiation and dosimetry in mixed ionization fields on board of aircraft.
+
+
+![AIRDOS02A flux rate measurement during aircraft flight](/doc/src/img/airdos_flight_doserate.png "flux rate measured by AIRDOS")
+
+
 
 ### Technical parameters
 
@@ -14,19 +19,19 @@ Cosmic radiation dosimeter unit. It is intended for airborne measurement of cosm
 * Time to GPS fix	26 s
 * Airborne GPS parameters (navigation altitude verified up to 36km amsl)
 * Integration time    10 s
-* Size LxWxH 166 mm x 107 mm x 57 mm 
+* Size LxWxH 166 mm x 107 mm x 57 mm
 * Weight 0.85 kg (Without batteries and GPS antenna)
 
 
 The device can be purchased from [Universal Scientific Technologies s.r.o](http://www.ust.cz). Contact us by [email](sale@ust.cz) for a commercial quotation.
 
-## Hardware description 
+## Hardware description
 
 ### Block schematics
 
 ![AIRDOS02A block diagram](hw/sch_pcb/AIRDOS02A_block.png)
 
-#### PCRD04B - semiconductor detector circuit 
+#### PCRD04B - semiconductor detector circuit
 
 ![AIRDOS02A - detektor schematics ](hw/sch_pcb/PCRD04B_Detector_Schematics.png)
 
@@ -49,18 +54,17 @@ The device can be purchased from [Universal Scientific Technologies s.r.o](http:
 
 ### Jumper configuration
 
-| GPS01B       |           | 
+| GPS01B       |           |
 | :-------------: |:-------------:|
-| USB     | OFF | 
-| EXT.POWER     | EXT | 
-| ANT.TYPE   | Active | 
+| USB     | OFF |
+| EXT.POWER     | EXT |
+| ANT.TYPE   | Active |
 
-| DATALOGER01A       |           | 
+| DATALOGER01A       |           |
 | :-------------: |:-------------:|
-| SDVDD     |  | 
-| POWER - BATERY     |  | 
+| SDVDD     |  |
+| POWER - BATERY     |  |
 
 ## Relevant publications
 
   * [AIRDOS — open-source PIN diode airborne dosimeter](https://iopscience.iop.org/article/10.1088/1748-0221/16/03/T03006)
-
