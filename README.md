@@ -9,7 +9,7 @@ Cosmic radiation dosimeter and spectrometer unit. It is intended for airborne me
 
 ### Technical parameters
 
-* Silicon PIN diode detector with ~60 mm³ detection volume
+* Silicon PIN diode detector with 44 mm³ detection volume
 * Measurement endurance up to 200 days with two LS33600 battery cells
 * Number of energy channels 248
 * Energy measurement resolution <60 keV/channel
