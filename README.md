@@ -1,24 +1,22 @@
-# AIRDOS02 - Airborne cosmic radiation dosimeter with GPS
+# AIRDOS02 - Airborne cosmic radiation dosimeter with GNSS receiver
 
 ![AIRDOS02A back panel](/doc/src/img/AIRDOS02A_box_front.jpg "AIRDOS front panel")
 
-Cosmic radiation dosimeter unit. It is intended for airborne measurement of cosmic radiation and dosimetry in mixed ionization fields on board of aircraft.
-
+Cosmic radiation dosimeter and spectrometer unit. It is intended for airborne measurement of cosmic radiation and dosimetry in mixed ionization fields on board aircraft.
 
 ![AIRDOS02A flux rate measurement during aircraft flight](/doc/src/img/airdos_flight_doserate.png "flux rate measured by AIRDOS")
-
 
 
 ### Technical parameters
 
 * Silicon PIN diode detector with ~60 mm³ detection volume
-* Measurement endurance 200 days with two LS33600 battery cells
-* Number of erengy channels    248
-* Energy measurement resolution    <60 keV/channel
-* GPS logging interval    10 minutes
+* Measurement endurance up to 200 days with two LS33600 battery cells
+* Number of energy channels 248
+* Energy measurement resolution <60 keV/channel
+* GPS logging interval of 10 minutes or more.
 * Time to GPS fix	26 s
-* Airborne GPS parameters (navigation altitude verified up to 36km amsl)
-* Integration time    10 s
+* Airborne GPS parameters (navigation altitude verified up to 36 km a.m.s.l.)
+* Radiation spectra integration time  10 s
 * Size LxWxH 166 mm x 107 mm x 57 mm
 * Weight 0.85 kg (Without batteries and GPS antenna)
 
