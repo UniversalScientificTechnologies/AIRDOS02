@@ -1,5 +1,7 @@
 # AIRDOS02 - Airborne cosmic radiation dosimeter with GNSS receiver
 
+Replaced with a more advanced version [AIRDOS04](https://docs.dos.ust.cz/airdos/AIRDOS04).
+
 ![AIRDOS02A back panel](/doc/src/img/AIRDOS02A_box_front.jpg "AIRDOS front panel")
 
 Cosmic radiation dosimeter and spectrometer unit. It is intended for airborne measurement of cosmic radiation and dosimetry in mixed ionization fields on board aircraft.
